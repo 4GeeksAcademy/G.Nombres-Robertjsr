@@ -12,20 +12,18 @@ window.onload = function() {
 
   function generadorDeNombres () {
     
-    let pronoun = ['the','our'];
-    let adj = ['great','big'];
-    let noun = ['jogger','racoon'];
-    let dot = [ '.com','.org','.gov' ]
+    let pronombre = ['the','our'];
+    let adjetivo = ['great','big'];
+    let sustantivo = ['jogger','racoon'];
+    let dominio = [ '.com','.org','.gov' ]
 
-    let text1 = pronoun [Math.floor(Math.random() * pronoun.length)]
-    let text2 = adj [Math.floor(Math.random() * adj.length)]
-    let text3 = noun [Math.floor(Math.random() * noun.length)]
-    let text4 = dot [Math.floor(Math.random() * dot.length)]
+    let texto1 = pronombre [Math.floor(Math.random() * pronombre.length)]
+    let texto2 = adjetivo [Math.floor(Math.random() * adjetivo.length)]
+    let texto3 = sustantivo [Math.floor(Math.random() * sustantivo.length)]
+    let texto4 = dominio [Math.floor(Math.random() * dominio.length)]
 
-    let resultado = text1 + " "  + text2 + " " + text3 + " " + text4;
+    let resultado = texto1 + " "  + texto2 + " " + texto3 + " " + texto4;
 
     document.getElementById("excuse").innerHTML = resultado
   }
-  generadorDeNombres()
-  
-  
+  generadorDeNombres() 
